@@ -1,0 +1,109 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Gradient background */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Glassmorphism Form */
+.form-container {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 25px 30px;
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    width: 350px;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    margin-top: 12px;
+    display: block;
+    color: #fff;
+}
+
+/* Inputs & Textarea */
+input, textarea {
+    width: 100%;
+    padding: 10px 12px;
+    margin-top: 6px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* Glow effect on focus */
+input:focus, textarea:focus {
+    outline: none;
+    box-shadow: 0 0 8px #00e1ff;
+    background: white;
+}
+
+/* Textarea height */
+textarea {
+    resize: none;
+    height: 90px;
+}
+
+/* Error message */
+.error {
+    color: #ff4b4b;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+/* Success message */
+.success {
+    color: #00ffb3;
+    text-align: center;
+    margin-top: 12px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Button */
+button {
+    background: linear-gradient(135deg, #43cea2, #185a9d);
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    margin-top: 18px;
+    font-size: 16px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #185a9d, #43cea2);
+    transform: scale(1.05);
+}
+
+/* Fade animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
